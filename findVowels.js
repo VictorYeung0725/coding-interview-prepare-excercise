@@ -60,3 +60,19 @@ function findVowels(string) {
 }
 
 //method 4 NOTE Advance level of by using reduce
+function findVowels4(string) {
+  if (typeof string !== 'string') return;
+
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  return string.split('').reduce((count, current) => {
+    if (vowels.includes(current)) {
+      return count + 1;
+    } else {
+      return count;
+    }
+  }, 0);
+}
+
+console.log(findVowels4('aeioubbb'));
+console.log(findVowels4('addgregwo'));

@@ -37,15 +37,3 @@ method.anonymous();
 
 // Call the arrow function
 method.arrow();
-
-//1. write a function that will reverse a string
-function reverseString(str) {
-  let reverStr = '';
-  for (let i = str.length - 1; i >= 0; i--) {
-    // reverStr.push(str[i]);
-    reverStr = reverStr + str[i];
-  }
-
-  return reverStr;
-}
-console.log(reverseString('hello'));
