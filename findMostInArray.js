@@ -7,3 +7,18 @@ function mostCommonString(arrStr) {
 
 console.log(mostCommonString(arr));
 //NOTE advance approach
+
+var a = 10;
+{
+  a;
+  var a = -10;
+  a;
+}
+
+let b = a;
+{
+  let b = -20;
+}
+b;
+b = 25;
+b;
