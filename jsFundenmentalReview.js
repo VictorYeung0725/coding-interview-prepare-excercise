@@ -65,3 +65,9 @@ true;
 if (23 > 10) return 'do something';
 
 //NOTE LOOP
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`victor have done ${rep}`);
+}
+
+//for-loop array
+//the while loop

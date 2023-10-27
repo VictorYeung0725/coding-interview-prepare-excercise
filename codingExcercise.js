@@ -16,3 +16,30 @@ let assignObj = Object.assign({}, obj);
 assignObj.b = 4;
 assignObj;
 obj;
+
+// Q
+const Person = {
+  name: 'victor',
+  age: 23,
+};
+
+//output: change it to array
+const arrayPerson = Object.entries(Person);
+arrayPerson;
+const retriveKey = arrayPerson.map((person) => person[0]);
+retriveKey;
+const retriveValue = arrayPerson.map((person) => person[1]);
+retriveValue;
+
+const getObjectEntries = (obj) => {
+  const objKey = Object.keys(obj);
+  console.log(objKey);
+
+  const newArry = objKey.map((key) => {
+    const value = obj[key];
+    return [key, value];
+  });
+  return newArry;
+};
+
+console.log(getObjectEntries(Person));
